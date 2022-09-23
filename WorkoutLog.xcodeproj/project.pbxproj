@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		AF105B0028DC469500ECC50D /* WorkoutLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF105AFF28DC469500ECC50D /* WorkoutLogApp.swift */; };
-		AF105B0228DC469500ECC50D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF105B0128DC469500ECC50D /* ContentView.swift */; };
+		AF105B0228DC469500ECC50D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF105B0128DC469500ECC50D /* MainView.swift */; };
 		AF105B0428DC469700ECC50D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF105B0328DC469700ECC50D /* Assets.xcassets */; };
 		AF105B0728DC469700ECC50D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF105B0628DC469700ECC50D /* Preview Assets.xcassets */; };
+		AF105B0E28DC472B00ECC50D /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF105B0D28DC472B00ECC50D /* Workout.swift */; };
+		AF105B1028DC4A2000ECC50D /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF105B0F28DC4A2000ECC50D /* AddWorkoutView.swift */; };
+		AF105B1228DC4B2100ECC50D /* WorkoutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF105B1128DC4B2100ECC50D /* WorkoutItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF105AFC28DC469500ECC50D /* WorkoutLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF105AFF28DC469500ECC50D /* WorkoutLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogApp.swift; sourceTree = "<group>"; };
-		AF105B0128DC469500ECC50D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF105B0128DC469500ECC50D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AF105B0328DC469700ECC50D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF105B0628DC469700ECC50D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF105B0D28DC472B00ECC50D /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		AF105B0F28DC4A2000ECC50D /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
+		AF105B1128DC4B2100ECC50D /* WorkoutItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				AF105AFF28DC469500ECC50D /* WorkoutLogApp.swift */,
-				AF105B0128DC469500ECC50D /* ContentView.swift */,
+				AF105B0128DC469500ECC50D /* MainView.swift */,
+				AF105B0F28DC4A2000ECC50D /* AddWorkoutView.swift */,
+				AF105B1328DC4B2B00ECC50D /* Data */,
 				AF105B0328DC469700ECC50D /* Assets.xcassets */,
 				AF105B0528DC469700ECC50D /* Preview Content */,
 			);
@@ -65,6 +73,15 @@
 				AF105B0628DC469700ECC50D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF105B1328DC4B2B00ECC50D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AF105B0D28DC472B00ECC50D /* Workout.swift */,
+				AF105B1128DC4B2100ECC50D /* WorkoutItem.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF105B0228DC469500ECC50D /* ContentView.swift in Sources */,
+				AF105B0228DC469500ECC50D /* MainView.swift in Sources */,
+				AF105B1228DC4B2100ECC50D /* WorkoutItem.swift in Sources */,
 				AF105B0028DC469500ECC50D /* WorkoutLogApp.swift in Sources */,
+				AF105B1028DC4A2000ECC50D /* AddWorkoutView.swift in Sources */,
+				AF105B0E28DC472B00ECC50D /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +215,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
